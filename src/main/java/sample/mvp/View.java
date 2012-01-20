@@ -13,7 +13,7 @@ import java.awt.Color;
 /**
  * @author eguchi
  */
-public class View extends javax.swing.JFrame implements ModelListener{
+public class View extends javax.swing.JFrame implements IView,ModelListener{
 
     private final Presenter presenter = new Presenter( this );
 
@@ -79,7 +79,7 @@ public class View extends javax.swing.JFrame implements ModelListener{
             weightField.setText( model.getWeight() );
             heightField.setText( model.getHeight() );
         }
-        bmiField.setText( model.getBmi() );
+        bmiField.setText( model.getBMI() );
 
     }
 

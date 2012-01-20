@@ -10,10 +10,10 @@ import java.awt.Color;
 public class Presenter{
 
     private boolean notifyEvent;
-    private View view;
+    private IView view;
     private Model model;
 
-    public Presenter( View view ){
+    public Presenter( IView view ){
         this.view = view;
     }
 
@@ -66,7 +66,7 @@ public class Presenter{
 
         float bmi;
         try{
-            bmi = Float.parseFloat( model.getBmi() );
+            bmi = Float.parseFloat( model.getBMI() );
         } catch ( NumberFormatException ignored ){
             return;
         }
