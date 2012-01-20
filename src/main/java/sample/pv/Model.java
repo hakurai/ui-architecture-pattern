@@ -18,7 +18,7 @@ public class Model{
         return height;
     }
 
-    public String getBmi(){
+    public String getBMI(){
         return bmi;
     }
 

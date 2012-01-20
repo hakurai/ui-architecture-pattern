@@ -83,7 +83,7 @@ public class View extends javax.swing.JFrame implements IView,ModelListener{
 
     }
 
-    public void setBmiBackground( Color bg ){
+    public void setBMIBackground( Color bg ){
         bmiField.setBackground( bg );
     }
 

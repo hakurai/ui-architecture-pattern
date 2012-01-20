@@ -82,7 +82,7 @@ public class Presenter{
             bmiColor = Color.RED;
         }
 
-        view.setBmiBackground( bmiColor );
+        view.setBMIBackground( bmiColor );
     }
 
     private String getTextWithDocumentEvent( DocumentEvent e ){

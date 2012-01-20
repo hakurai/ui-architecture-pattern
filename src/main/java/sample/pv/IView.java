@@ -11,7 +11,7 @@ public interface IView{
 
     void setWeight( String weight );
 
-    void setBmi( String bmi );
+    void setBMI( String bmi );
 
-    void setBmiBackground( Color bg );
+    void setBMIBackground( Color bg );
 }

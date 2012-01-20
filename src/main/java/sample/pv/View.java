@@ -76,11 +76,11 @@ public class View extends javax.swing.JFrame implements IView{
         weightField.setText( weight );
     }
 
-    public void setBmi( String bmi ){
+    public void setBMI( String bmi ){
         bmiField.setText( bmi );
     }
 
-    public void setBmiBackground( Color bg ){
+    public void setBMIBackground( Color bg ){
         bmiField.setBackground( bg );
     }
 

@@ -63,11 +63,11 @@ public class Presenter{
             view.setHeight( model.getHeight() );
             view.setWeight( model.getWeight() );
         }
-        view.setBmi( model.getBmi() );
+        view.setBMI( model.getBMI() );
 
         float bmi;
         try{
-            bmi = Float.parseFloat( model.getBmi() );
+            bmi = Float.parseFloat( model.getBMI() );
         } catch ( NumberFormatException ignored ){
             return;
         }
@@ -77,13 +77,13 @@ public class Presenter{
             bmiColor = Color.WHITE;
         } else if( bmi < 20.0f ){
             bmiColor = Color.YELLOW;
-        } else if( bmi < 30 ){
+        } else if( bmi < 30.0f ){
             bmiColor = Color.ORANGE;
         } else{
             bmiColor = Color.RED;
         }
 
-        view.setBmiBackground( bmiColor );
+        view.setBMIBackground( bmiColor );
     }
 
     private String getTextWithDocumentEvent( DocumentEvent e ){

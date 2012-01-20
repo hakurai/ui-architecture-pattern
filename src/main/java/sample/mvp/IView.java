@@ -7,5 +7,5 @@ import java.awt.Color;
  */
 public interface IView{
 
-    void setBmiBackground( Color bg );
+    void setBMIBackground( Color bg );
 }
